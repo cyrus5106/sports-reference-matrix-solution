@@ -18,16 +18,3 @@ Diagonal cells display -- (teams cannot play themselves)
 2. Save JSON data to a file
 3. Run the script:
    python head_to_head_mat.py
-
-## Example Output
-Given this JSON sample: 
-data = {
-    'NYY': {'BOS': {'W': 10, 'L': 9}, 'TBR': {'W': 11, 'L': 8}},
-    'BOS': {'NYY': {'W': 9, 'L': 10}, 'TBR': {'W': 7, 'L': 12}},
-    'TBR': {'NYY': {'W': 8, 'L': 11}, 'BOS': {'W': 12, 'L': 7}}
-}
-The script will generate a table like this:
-   Tm   BOS   NYY   TBR
-  BOS    --   9-10  7-12
-  NYY  10-9    --  11-8
-  TBR  12-7  8-11    --
